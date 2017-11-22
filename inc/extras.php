@@ -61,7 +61,7 @@ function qod_modify_archives( $query ){
     if( (is_home() || is_single() ) && !is_admin() && $query->is_main_query() ) {
       $query->set( 'orderby','rand' );  
       $query->set( 'orderby','ASC' );
-      $query->set( 'posts_per_page', 2 );
+      $query->set( 'posts_per_page', 1 );
     }
     if( (is_archive()) && !is_admin() & $query->is_main_query() ){
         $query->set( 'posts_per_page', 5);
