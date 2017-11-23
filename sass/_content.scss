@@ -31,3 +31,21 @@
 	clear: both;
 	margin: 0 0 $base__space-unit;
 }
+
+//index.php //front page
+body{
+	background-color: black;
+	padding:.5rem;
+}
+
+
+.site-main{
+	color:$text;
+}
+
+
+.site-branding{
+	a img{
+		padding-top:3rem;
+	}
+}

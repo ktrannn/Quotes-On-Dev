@@ -1,17 +1,29 @@
 
+
+
+
 (function( $ ) {
-  $('#new-quote-button').on('click', function(event) {
-     event.preventDefault();
+  var $content = $('.hentry');
+
+  $('#new-quote-button').on('click', function(e) {
+    e.preventDefault();
+  
+     $content.empty();
      $.ajax({
-        method: 'post',
-        url: 'http://localhost:3000/quotesondev/ .wp-json/wp/v2/posts';
-        data: {
-           'action': 'red_comment_ajax',
-           'security': red_vars.comment_nonce,
-           'the_post_id': red_vars.post_id
-        }
-     }).done( function(response) {
-        alert('Success! Comments are closed for this post.');
+        method: 'GET',
+        url: api_vars.root_url + '/wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1' 
+        
+     })
+     .done( function(data) {
+      
+      // alert('Success! Comments are closed for this post.');
+      console.log(data);
+      $('.hentry').append(
+        data[0].excerpt.rendered,
+        data[0].title.rendered,
+        data[0].date
+      );
      });
   });
 })( jQuery );
+

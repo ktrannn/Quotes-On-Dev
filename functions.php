@@ -76,7 +76,7 @@ function qod_scripts() {
 		));
 	}
 
-
+	
 }
 add_action( 'wp_enqueue_scripts', 'qod_scripts' );
 
