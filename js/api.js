@@ -16,19 +16,38 @@
         
      })
      .done( function(data) {
-      
-
+     
       console.log(data);
-      $('.hentry').append(
-        data[0].excerpt.rendered,
-        data[0].title.rendered,
-        '<a>' + data[0]._qod_quote_source + '</a>'
-      );
+      var quoteContent = data[0].excerpt.rendered,
+      authorName = data[0].title.rendered,
+      quoteSource = data[0]._qod_quote_source,
+      quoteUrl = data[0]._qod_quote_source_url;
+  
+      var content = '';
+      content += '<p>' + quoteContent + '</p>';
+      content += '<p>' + authorName + '</p>';
+      content += '<a href="' + quoteUrl + '">';
+      content += quoteSource + '</a>';
+      $('.hentry').append(content);
+      
      });
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 })( jQuery );
 
-// output += '<a href="' + articleLink + '">';
-// output += '<div class="articlePic" style="background-image:url(' + image + ')">';
-// output += '<p class="text">' + articleText + '</p></div>';
-// output += '</a></li>';
