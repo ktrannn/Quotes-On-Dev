@@ -21,9 +21,14 @@
       $('.hentry').append(
         data[0].excerpt.rendered,
         data[0].title.rendered,
-        data[0].date
+        '<a>' + data[0]._qod_quote_source + '</a>'
+        // data[0]._qod_quote_source_url
       );
      });
   });
 })( jQuery );
 
+// output += '<a href="' + articleLink + '">';
+// output += '<div class="articlePic" style="background-image:url(' + image + ')">';
+// output += '<p class="text">' + articleText + '</p></div>';
+// output += '</a></li>';
