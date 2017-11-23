@@ -33,7 +33,7 @@ get_header(); ?>
               <label for="quote-source-url">Where did you find this quote?</label>
               <input type="url" name="quote_source_url" id="quote-source-url">
             </div>
-            <input type="submit" value="Submit Quote">
+            <input type="submit" id ="submit-quote" value="Submit Quote">
           </div>  
           </form>
           <p class="submit-sucess-message"></p>

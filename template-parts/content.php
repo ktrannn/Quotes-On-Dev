@@ -4,8 +4,8 @@
  *
  * @package QOD_Starter_Theme
  */
-$source = get_post_meta(	get_the_ID(), 'qod_quote_source',true	);
-$source_url = get_post_meta ( get_the_ID(), 'qod_quote_source_url',true);
+$source = get_post_meta(	get_the_ID(), '_qod_quote_source',true	);
+$source_url = get_post_meta ( get_the_ID(), '_qod_quote_source_url',true);
 
 ?>
 
@@ -18,6 +18,8 @@ $source_url = get_post_meta ( get_the_ID(), 'qod_quote_source_url',true);
 
 	<div class="entry-meta">
 	<?php the_title( '<h2 class="entry-title">&mdash; ', '</h2>' );?>
+	
+
 	<?php if( $source && $source_url): ?>
 		<span class="source">, <a href="<?php echo $source_url; ?>"><?php echo $source; ?></a></span>
 		
@@ -25,7 +27,7 @@ $source_url = get_post_meta ( get_the_ID(), 'qod_quote_source_url',true);
 		<span class="source">, <?php echo $source; ?></span>
 
 		<?php else: ?>
-
+		<span class="source">hello</span>
   <?php endif; ?>
 
 	</div>

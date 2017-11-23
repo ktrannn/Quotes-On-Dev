@@ -4,9 +4,8 @@
 
 (function( $ ) {
   var $content = $('.hentry');
-  // var quoteAuthor = $('#quote-author').val();
-
-  $('#new-quote-button').on('click', function(e) {
+  // var $form = $('#quote-submission-form');
+  $('#new-quote-button').on('click', function(e){
     e.preventDefault();
   
      $content.empty();
@@ -29,25 +28,37 @@
       content += '<a href="' + quoteUrl + '">';
       content += quoteSource + '</a>';
       $('.hentry').append(content);
-      
+
      });
   });
 
+  $('#submit-quote').on('click', function(e){
+    e.preventDefault();
+    var quoteContent = $('#quote-content').val(),
+    authorName = $('#quote-author').val(),
+    quoteSource = $('#quote-source').val(),
+    quoteUrl = $('#quote-source-url').val();
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    $.ajax({
+      method: 'POST',
+      url: api_vars.root_url + '/wp/v2/posts',
+      data:{
+        title: authorName,
+        content: quoteContent,
+        _qod_quote_source: quoteSource,
+        _qod_quote_source_url: quoteUrl,
+        status: 'publish'
+      },
+      beforeSend: function(xhr) {
+        xhr.setRequestHeader( 'X-WP-Nonce', api_vars.nonce );
+     }
+    }).done ( function (){
+      window.location.reload();
+      // alert('submitted');
+    })
+  });  
+  
 
 })( jQuery );
 
