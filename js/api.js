@@ -16,13 +16,12 @@
      })
      .done( function(data) {
       
-      // alert('Success! Comments are closed for this post.');
+      
       console.log(data);
       $('.hentry').append(
         data[0].excerpt.rendered,
         data[0].title.rendered,
         '<a>' + data[0]._qod_quote_source + '</a>'
-        // data[0]._qod_quote_source_url
       );
      });
   });
