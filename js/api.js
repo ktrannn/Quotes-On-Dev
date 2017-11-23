@@ -4,6 +4,7 @@
 
 (function( $ ) {
   var $content = $('.hentry');
+  
   // var $form = $('#quote-submission-form');
   $('#new-quote-button').on('click', function(e){
     e.preventDefault();
@@ -12,10 +13,12 @@
      $.ajax({
         method: 'GET',
         url: api_vars.root_url + '/wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1' 
+         
         
      })
      .done( function(data) {
-     
+      var $slug = data[0].slug;
+      
       console.log(data);
       var quoteContent = data[0].excerpt.rendered,
       authorName = data[0].title.rendered,
@@ -27,7 +30,7 @@
       content += '<p>' + authorName + '</p>';
       content += '<a href="' + quoteUrl + '">';
       content += quoteSource + '</a>';
-      $('.hentry').append(content);
+      $('.hentry').append(content,history.pushState(null, null, $slug));
 
      });
   });
