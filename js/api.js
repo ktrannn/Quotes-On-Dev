@@ -4,6 +4,7 @@
 
 (function( $ ) {
   var $content = $('.hentry');
+  // var quoteAuthor = $('#quote-author').val();
 
   $('#new-quote-button').on('click', function(e) {
     e.preventDefault();
@@ -16,7 +17,7 @@
      })
      .done( function(data) {
       
-      
+
       console.log(data);
       $('.hentry').append(
         data[0].excerpt.rendered,
