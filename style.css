@@ -370,8 +370,9 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
+  background-color: #222222;
   color: #666;
-  border: 1px solid #ccc;
+  border: 2px solid #0c0;
   border-radius: 3px; }
   input[type="text"]:focus,
   input[type="email"]:focus,
@@ -391,6 +392,19 @@ input[type="search"] {
 textarea {
   padding-left: 3px;
   width: 100%; }
+
+.quote-source-box {
+  padding-bottom: 2rem; }
+
+.quote-author-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -676,6 +690,13 @@ body {
     font-size: 2rem; }
   #new-quote-button {
     margin-left: 35%; } }
+
+.archive .post {
+  border-bottom: 1px dotted white;
+  padding-bottom: 2rem; }
+
+.category-display, .tag-display {
+  font-size: 2rem; }
 
 /*--------------------------------------------------------------
 # Media

@@ -21,7 +21,7 @@ get_header(); ?>
 
             <?php /* Start the Loop */ ?>
                 
-               
+                <p class="tag-display"><?php single_tag_title( "Tag: "); ?></p>
 			<?php while ( have_posts() ) : the_post(); ?>
                 
 				<?php get_template_part( 'template-parts/content' ); ?>

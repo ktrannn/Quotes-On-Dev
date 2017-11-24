@@ -17,7 +17,7 @@ get_header(); ?>
       <div class="quote-submission-wrapper">
           <form name="quoteForm" id="quote-submission-form">
           <div>
-            <div>
+            <div class="quote-author-box">
               <label for="quote-author">Author of Quote</label>
               <input type="text" name="quote_author" id="quote-author">
             </div>
@@ -29,8 +29,8 @@ get_header(); ?>
               <label for="quote-source">Where did you find this quote?</label>
               <input type="text" name="quote_source" id="quote-source">
             </div>
-            <div>
-              <label for="quote-source-url">Where did you find this quote?</label>
+            <div class="quote-source-box">
+              <label for="quote-source-url">Provide the URL of quote source.</label>
               <input type="url" name="quote_source_url" id="quote-source-url">
             </div>
             <input type="submit" id ="submit-quote" value="Submit Quote">

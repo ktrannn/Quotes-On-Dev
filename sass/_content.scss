@@ -125,3 +125,15 @@ body{
 		margin-left:35%;
 	}
 }
+
+
+// archive tag , category//
+.archive{	
+	.post{
+		border-bottom:1px dotted white;
+		padding-bottom:2rem;
+	}
+}	
+.category-display,.tag-display{
+	font-size:2rem;
+}
