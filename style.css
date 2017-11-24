@@ -614,7 +614,14 @@ body {
   .site-branding {
     margin: 4rem 10rem 1rem; }
   .site-content {
-    margin: 4rem 10rem 1rem; } }
+    margin: 4rem 10rem 1rem; }
+  .site-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; } }
 
 /*--------------------------------------------------------------
 # Media
