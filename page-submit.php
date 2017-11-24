@@ -38,7 +38,7 @@ get_header(); ?>
           </form>
           <p class="submit-sucess-message"></p>
         <?php else: ?>
-        <p>you must log in to post</p>
+        <p>Sorry, you must be logged in to submit a quote!</p>
         <p><?php echo sprintf( '<a href="%1s">%2s</a>',
         esc_url(wp_login_url()), 'Click Here to Log In' )?></p>
 

@@ -67,7 +67,11 @@ body{
 	.entry-content, .type-post{
 		font-size:1.6rem;
 	}
-
+	.site-branding{
+		a img{
+			width:500px;
+		}
+	}
 
 	// about page//
 	.page{
@@ -84,9 +88,31 @@ body{
 	}
 	.site-branding{
 		margin: 4rem 10rem 1rem;
+		a img{
+			width:700px
+		}
 	}
+
 	.site-content{
 		margin: 4rem 10rem 1rem;
+	}
+	.site-content:before{
+		position: absolute;
+		left:10%;
+		top:35%;
+		content:"\f10d";
+		font-family:'fontawesome';
+		color:$green;
+		font-size:8rem;
+	}
+	.site-content:after{
+		position: absolute;
+		right:10%;
+		top:35%;
+		content:"\f10e";
+		font-family:'fontawesome';
+		color:$green;
+		font-size:8rem;
 	}
 	.site-footer{
 		display:flex;
