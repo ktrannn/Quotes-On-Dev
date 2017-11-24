@@ -17,7 +17,8 @@
         
      })
      .done( function(data) {
-      var $slug = data[0].slug;
+      var slug = data[0].slug;
+      
       
       console.log(data);
       var quoteContent = data[0].excerpt.rendered,
@@ -30,7 +31,8 @@
       content += '<p>' + authorName + '</p>';
       content += '<a href="' + quoteUrl + '">';
       content += quoteSource + '</a>';
-      $('.hentry').append(content,history.pushState(null, null, $slug));
+      
+      $('.hentry').append(content,history.pushState(null,null,slug));
 
      });
   });
