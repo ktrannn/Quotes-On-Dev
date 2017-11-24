@@ -416,10 +416,10 @@ textarea {
   border-right: 1px solid #fff;
   line-height: 1; }
 
-.menu li:nth-last-child(3) {
+.menu li:nth-child(1) {
   padding-right: 1rem; }
 
-.menu li:nth-last-child(2) {
+.menu li:nth-child(2) {
   padding-left: 1rem;
   padding-right: 1rem; }
 
