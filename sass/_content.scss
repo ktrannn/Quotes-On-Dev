@@ -34,10 +34,15 @@
 
 //index.php //front page
 body{
-	background-color: black;
+	background-color:$background;
 	padding:.5rem;
 }
-
+.content{
+	margin: 0 auto;
+	max-width: 1080px;
+	padding: 0.5rem;
+	width: 100%;
+}
 
 .site-main{
 	color:$text;

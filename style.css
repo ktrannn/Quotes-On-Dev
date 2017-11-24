@@ -392,13 +392,42 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+/*  Main Navigation		*/
+.site-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 4.5rem 0 3rem; }
+
+.red-link {
+  color: #fff; }
+  .red-link a {
+    text-decoration: none; }
+
+.menu li {
+  border-right: 1px solid #fff;
+  line-height: 1; }
+
+.menu li:nth-last-child(3) {
+  padding-right: 1rem; }
+
+.menu li:nth-last-child(2) {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.menu li:nth-last-child(1) {
+  border-right: none;
+  padding-left: 1rem; }
+
 /* Links */
 a {
-  color: royalblue; }
+  color: #0c0; }
   a:visited {
-    color: purple; }
+    color: #0c0; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #0c0; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -411,7 +440,9 @@ a {
   float: left;
   width: 100%; }
   .main-navigation ul {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     list-style: none;
     margin: 0;
     padding-left: 0; }
@@ -448,7 +479,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .menu-toggle {
-    display: none; }
+    display: block; }
   .main-navigation ul {
     display: block; } }
 
@@ -555,8 +586,14 @@ a {
   margin: 0 0 1.5rem; }
 
 body {
-  background-color: black;
+  background-color: #222222;
   padding: .5rem; }
+
+.content {
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 0.5rem;
+  width: 100%; }
 
 .site-main {
   color: white; }
@@ -586,3 +623,17 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
+.post-archives ul, .category-archives ul, .tag-archives ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .post-archives ul li, .category-archives ul li, .tag-archives ul li {
+    font-size: 1.25rem;
+    padding-right: 1rem; }
+    .post-archives ul li a, .category-archives ul li a, .tag-archives ul li a {
+      text-decoration: none; }

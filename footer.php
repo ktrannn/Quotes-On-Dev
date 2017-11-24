@@ -11,10 +11,13 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-				</nav><!-- #site-navigation -->
+					<div id="site-navigation" class="main-navigation" role="navigation">
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					</div>
+					<p class="red-link">Brought to you by
+						<a href="http://www.redacademy.com/">RED Academy</a>
+					</p>
+				<!-- #site-navigation -->
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

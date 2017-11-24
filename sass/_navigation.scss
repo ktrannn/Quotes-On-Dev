@@ -2,18 +2,53 @@
 # Navigation
 --------------------------------------------------------------*/
 
+/*  Main Navigation		*/
+
+.site-info{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 4.5rem 0 3rem;
+}
+.red-link{
+	color:#fff;
+	a{
+		text-decoration: none;
+	}
+}
+.menu{
+
+		li{
+			border-right: 1px solid #fff;
+			line-height:1;
+		}
+		li:nth-last-child(3){
+		padding-right:1rem;
+		}
+		li:nth-last-child(2){
+		padding-left:1rem;
+		padding-right:1rem;
+		}
+		li:nth-last-child(1){
+			border-right:none;
+			padding-left:1rem;
+		}
+
+}
+
 /* Links */
 
+
+
 a {
-	color: $color__link;
+	color: $green;
 
 	&:visited {
-		color: $color__link-visited;
+		color: $green;
 	}
 	&:hover,
 	&:focus,
 	&:active {
-		color: $color__link-hover;
+		color: $green;
 	}
 	&:focus {
 		outline: thin dotted;
@@ -33,9 +68,9 @@ a {
 	width: 100%;
 
 	ul {
-		display: none;
+		display: flex;
 		list-style: none;
-		margin: 0;
+		margin:0;
 		padding-left: 0;
 
 		ul {
@@ -103,7 +138,7 @@ a {
 
 @media screen and (min-width: 768px) {
 	.menu-toggle {
-		display: none;
+		display: block;
 	}
 	.main-navigation ul {
 		display: block;

@@ -28,7 +28,7 @@
   
       var content = '';
       content += '<p>' + quoteContent + '</p>';
-      content += '<p>' + authorName + '</p>';
+      content += '<h2>' + authorName + '</h2>';
       content += '<a href="' + quoteUrl + '">';
       content += quoteSource + '</a>';
       
