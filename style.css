@@ -610,6 +610,10 @@ body {
 .site-branding a img {
   padding-top: 3rem; }
 
+@media (min-width: 1080px) {
+  .site-content {
+    margin: 4rem 10rem 1rem; } }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
