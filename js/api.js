@@ -28,9 +28,9 @@
   
       var content = '';
       content += '<p>' + quoteContent + '</p>';
-      content += '<h2>' + authorName + '</h2>';
+      content += '<div class="author-source-container">' + '<p>' +  authorName + '</p>';
       content += '<a href="' + quoteUrl + '">';
-      content += quoteSource + '</a>';
+      content += quoteSource + '</a>' + '</div>';
       
       $('.hentry').append(content,history.pushState(null,null,slug));
 

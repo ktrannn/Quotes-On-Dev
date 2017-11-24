@@ -59,9 +59,29 @@ body{
 		padding-top:3rem;
 	}
 }
+@media (min-width: 680px){
+	.red-link{
+		margin:0;
+		padding-left:1rem;
+	}
+	.entry-content, .type-post{
+		font-size:1.6rem;
+	}
 
+
+	// about page//
+	.page{
+		.entry-content{
+			font-size:1rem;
+		}
+	}
+
+}
 
 @media (min-width: 1080px){
+	.site-navigation{
+		padding-top:0.2rem;
+	}
 	.site-branding{
 		margin: 4rem 10rem 1rem;
 	}
@@ -71,5 +91,11 @@ body{
 	.site-footer{
 		display:flex;
 		justify-content: flex-end;
+	}
+	.entry-content{
+		font-size:2rem;
+	}
+	#new-quote-button{
+		margin-left:35%;
 	}
 }

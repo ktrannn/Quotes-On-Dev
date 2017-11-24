@@ -8,6 +8,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin: 4.5rem 0 3rem;
+	align-items:center;
 }
 .red-link{
 	color:#fff;
@@ -33,6 +34,27 @@
 			padding-left:1rem;
 		}
 
+}
+
+.entry-meta{
+	display:inline;
+	font-size:1.25rem;
+	h2{
+		display:inline;
+		font-size:1.25rem;
+		margin:0;
+	}
+}
+
+.author-source-container{
+	display:inline;
+	font-size:1.25rem;
+	p{
+		display: inline;
+	}
+	a{
+		padding-left:1rem;
+	}
 }
 
 /* Links */
@@ -65,7 +87,7 @@ a {
 	clear: both;
 	display: block;
 	float: left;
-	width: 100%;
+	width: auto;
 
 	ul {
 		display: flex;
