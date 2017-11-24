@@ -623,7 +623,9 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
-.post-archives ul, .category-archives ul, .tag-archives ul {
+.post-archives ul,
+.category-archives ul,
+.tag-archives ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -632,8 +634,11 @@ object {
   padding: 0;
   margin: 0;
   list-style: none; }
-  .post-archives ul li, .category-archives ul li, .tag-archives ul li {
-    font-size: 1.25rem;
+  .post-archives ul li,
+  .category-archives ul li,
+  .tag-archives ul li {
     padding-right: 1rem; }
-    .post-archives ul li a, .category-archives ul li a, .tag-archives ul li a {
+    .post-archives ul li a,
+    .category-archives ul li a,
+    .tag-archives ul li a {
       text-decoration: none; }
