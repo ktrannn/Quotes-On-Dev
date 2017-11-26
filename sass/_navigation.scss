@@ -165,6 +165,13 @@ a {
 	.main-navigation ul {
 		display: block;
 	}
+	.menu{
+		li:nth-last-child(1){
+			border-right:1px solid white;
+			padding-left:1rem;
+			padding-right:1rem;
+		}
+	}
 }
 
 .comment-navigation,

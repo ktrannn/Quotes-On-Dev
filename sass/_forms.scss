@@ -49,19 +49,50 @@ input[type="url"],
 input[type="password"],
 input[type="search"] {
 	padding: 3px;
+	width:240px;
 }
 
 textarea {
 	padding-left: 3px;
 	width: 100%;
+	margin-top:1rem;
 }
 
 //submit page//
-.quote-source-box{
+.quote-source-url-box{
 	padding-bottom:2rem;
+	margin-bottom:1rem;
 }
 .quote-author-box{
 	display: flex;
 	flex-direction: column;
-	width: 60%;
+}
+.quote-submission-wrapper{
+	div:nth-child(-n+4){
+		padding-bottom:1rem;
+		input:nth-child(-n+4){
+			margin-top:1rem;
+		}
+	}
+}
+
+@media screen and (min-width: 768px){
+
+.quote-source-box{
+	display:flex;
+	flex-direction: column;
+}
+
+.quote-source-url-box{
+	display:flex;
+	flex-direction: column;
+}
+
+.quote-submission-wrapper{
+	input:nth-child(-n+4){
+		width:60%;
+	}
+ }
+
+
 }

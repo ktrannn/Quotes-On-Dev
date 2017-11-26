@@ -1,0 +1,20 @@
+.error404{
+  .search-form{
+    display:flex;
+  }
+
+  .search-box{
+    border:none;
+    padding:0;
+  }
+
+  .search-submit{
+    background-color:none; 
+    border:none; 
+    border-radius: none; 
+    color: #0c0;
+    padding:none; 
+    padding: 0;
+    padding-left: 1rem;
+  }
+}

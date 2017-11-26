@@ -14,9 +14,9 @@ get_header(); ?>
       </header>
 
       <?php if( is_user_logged_in() && current_user_can( 'edit_posts' )):  ?>
-      <div class="quote-submission-wrapper">
-          <form name="quoteForm" id="quote-submission-form">
-          <div>
+      <div>
+          <form>
+          <div class="quote-submission-wrapper"> 
             <div class="quote-author-box">
               <label for="quote-author">Author of Quote</label>
               <input type="text" name="quote_author" id="quote-author">
@@ -25,11 +25,11 @@ get_header(); ?>
               <label for="quote-content">Quote</label>
               <textarea rows="3" cols="20" name="quote_content" id="quote-content"></textarea>
             </div>
-            <div>
+            <div class="quote-source-box">
               <label for="quote-source">Where did you find this quote?</label>
               <input type="text" name="quote_source" id="quote-source">
             </div>
-            <div class="quote-source-box">
+            <div class="quote-source-url-box">
               <label for="quote-source-url">Provide the URL of quote source.</label>
               <input type="url" name="quote_source_url" id="quote-source-url">
             </div>

@@ -387,14 +387,17 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-  padding: 3px; }
+  padding: 3px;
+  width: 240px; }
 
 textarea {
   padding-left: 3px;
-  width: 100%; }
+  width: 100%;
+  margin-top: 1rem; }
 
-.quote-source-box {
-  padding-bottom: 2rem; }
+.quote-source-url-box {
+  padding-bottom: 2rem;
+  margin-bottom: 1rem; }
 
 .quote-author-box {
   display: -webkit-box;
@@ -403,8 +406,32 @@ textarea {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column;
-  width: 60%; }
+          flex-direction: column; }
+
+.quote-submission-wrapper div:nth-child(-n+4) {
+  padding-bottom: 1rem; }
+  .quote-submission-wrapper div:nth-child(-n+4) input:nth-child(-n+4) {
+    margin-top: 1rem; }
+
+@media screen and (min-width: 768px) {
+  .quote-source-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .quote-source-url-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .quote-submission-wrapper input:nth-child(-n+4) {
+    width: 60%; } }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -517,7 +544,11 @@ a {
   .menu-toggle {
     display: block; }
   .main-navigation ul {
-    display: block; } }
+    display: block; }
+  .menu li:nth-last-child(1) {
+    border-right: 1px solid white;
+    padding-left: 1rem;
+    padding-right: 1rem; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -666,7 +697,7 @@ body {
   .site-content:before {
     position: absolute;
     left: 10%;
-    top: 35%;
+    top: 47.5%;
     content: "\f10d";
     font-family: 'fontawesome';
     color: #0c0;
@@ -674,7 +705,7 @@ body {
   .site-content:after {
     position: absolute;
     right: 10%;
-    top: 35%;
+    top: 47.5%;
     content: "\f10e";
     font-family: 'fontawesome';
     color: #0c0;
@@ -741,3 +772,30 @@ object {
     .category-archives ul li a,
     .tag-archives ul li a {
       text-decoration: none; }
+
+.error404 .search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.error404 .search-box {
+  border: none;
+  padding: 0; }
+
+.error404 .search-submit {
+  background-color: none;
+  border: none;
+  border-radius: none;
+  color: #0c0;
+  padding: none;
+  padding: 0;
+  padding-left: 1rem; }
+
+.search-results .page-title {
+  font-weight: 400;
+  border-bottom: 1px dotted #fff;
+  padding-bottom: 2rem; }
+
+@media screen and (min-width: 768px) {
+  .entry-title {
+    font-size: 2rem; } }
