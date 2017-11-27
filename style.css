@@ -424,7 +424,7 @@ textarea {
   padding: 0;
   margin: 0; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 620px) {
   .quote-source-box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -551,7 +551,7 @@ a {
 .main-navigation.toggled ul {
   display: block; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 620px) {
   .menu-toggle {
     display: block; }
   .main-navigation ul {
@@ -686,7 +686,7 @@ body {
 .site-branding a img {
   padding-top: 3rem; }
 
-@media (min-width: 680px) {
+@media (min-width: 620px) {
   .red-link {
     margin: 0;
     padding-left: 1rem; }
@@ -809,6 +809,6 @@ object {
   border-bottom: 1px dotted #fff;
   padding-bottom: 2rem; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 620px) {
   .entry-title {
     font-size: 2rem; } }
