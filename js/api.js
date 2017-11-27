@@ -60,7 +60,7 @@
      }
     }).done ( function (){
       window.location.reload();
-      // alert('submitted');
+      alert('submitted');
     })
   });  
   
