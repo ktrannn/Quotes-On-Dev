@@ -368,7 +368,7 @@ input[type="password"],
 input[type="search"],
 textarea {
   background-color: #222222;
-  color: #666;
+  color: #fff;
   border: 2px solid #0c0;
   border-radius: 3px; }
   input[type="text"]:focus,
