@@ -41,7 +41,7 @@
 body{
 	background-color:$background;
 	padding:.5rem;
-	font-family:fantasy;
+	font-family:$exo_font;
 }
 .content{
 	margin: 0 auto;
@@ -90,7 +90,8 @@ body{
 	.site-branding{
 		margin: 4rem 10rem 1rem;
 		a img{
-			width:700px
+			width:700px;
+			padding-top:0;
 		}
 	}
 
@@ -100,7 +101,7 @@ body{
 	.site-content:before{
 		position: absolute;
 		left:10%;
-		top:47.5%;
+		top:40%;
 		content:"\f10d";
 		font-family:'fontawesome';
 		color:$green;
@@ -109,7 +110,7 @@ body{
 	.site-content:after{
 		position: absolute;
 		right:10%;
-		top:47.5%;
+		top:40%;
 		content:"\f10e";
 		font-family:'fontawesome';
 		color:$green;
