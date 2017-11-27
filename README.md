@@ -1,23 +1,18 @@
-# Quotes on Dev Starter
+# Quotes On Dev
 
-A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+## Technologies Used
+Gulp, Jquery, HTML, CSS, SASS, NPM Packages, Terminal, Github, Wordpress, PHP, javascript, Plugins, Databases
 
-## Installation
+## Project Summary
+Build a functioning site that dynamically generates a quote on the click on a button without refreshing the page, be able to submit quotes and have it posted onto the site and uploaded onto the database.
 
-### 1. Download me (don't clone me!)
-
-Then add me to your `wp-content/themes` directory.
-
-### 2. Rename the `quotesondev-starter-master` directory
-
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
-
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` **inside your theme directory** to install the npm packages you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
-
-And now would be a good time to `git init` :)
+## Personal Learnings 
+Learned how to use a content management system.
+How to incorporate php within html.
+How to use action and filter hooks;manipulate data before it gets sent to a database.
+How to create custom field suites and apply them to certain fields
+Learned how create custom templates for different web pages
+learned how to get new quotes on click of a button without having the page reload everytime
+Learned that if you have a css reset and a normalize file, the css reset will overwrite the normalize's code
+learned how to have a quote published through webpage and be uploaded into the databse
+learned how to use history.pushstate to append the contents slug to the end of the browsers URL
