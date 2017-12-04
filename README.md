@@ -29,4 +29,8 @@ Quotes on Dev is an app that uses a GET request to a WP API to dynamically add a
 * Show an error message when a quote is not successfully submitted to the database
 
 ## Project Screenshots:
-<img src="https://i.imgur.com/luwiQya.png" width="250"><img src="https://i.imgur.com/C29inzi.png" width="250"><img src="https://i.imgur.com/V30fEkQ.png" width="250"><img src="https://i.imgur.com/aHwRewT.png" width="250"><img src="https://i.imgur.com/ZdcTM9i.png" width="250">
+<img src="https://i.imgur.com/luwiQya.png" width="250">
+<img src="https://i.imgur.com/C29inzi.png" width="250">
+<img src="https://i.imgur.com/V30fEkQ.png" width="250">
+<img src="https://i.imgur.com/aHwRewT.png" width="250">
+<img src="https://i.imgur.com/ZdcTM9i.png" width="250">
