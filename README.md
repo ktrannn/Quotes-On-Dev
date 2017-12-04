@@ -28,6 +28,12 @@ Quotes on Dev is an app that uses a GET request to a WP API to dynamically add a
 * Clear the quote submission form and show an affirmative message when a quote is successfully submitted to the database
 * Show an error message when a quote is not successfully submitted to the database
 
+## Setup
+
+**Install dependencies:**
+
+`> npm i`
+
 ## Project Screenshots:
 <img src="https://i.imgur.com/luwiQya.png" width="250">
 <img src="https://i.imgur.com/C29inzi.png" width="250">
