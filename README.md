@@ -36,5 +36,6 @@ Quotes on Dev is an app that uses a GET request to a WP API to dynamically add a
 <img src="https://i.imgur.com/ZdcTM9i.png" width="250">
 <img src="https://i.imgur.com/RJlb13D.png" width="250>
 <img src="https://i.imgur.com/WPquKIC.png" width="250">
+                                                      [Imgur](https://i.imgur.com/WPquKIC.png)
                                                   
                                                   
