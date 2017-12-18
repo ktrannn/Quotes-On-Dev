@@ -37,21 +37,24 @@
 
     $.ajax({
       method: 'POST',
-      url: api_vars.root_url + '/wp/v2/posts',
+      url: api_vars.root_url + 'wp/v2/posts',
       data:{
         title: authorName,
         content: quoteContent,
         _qod_quote_source: quoteSource,
         _qod_quote_source_url: quoteUrl,
-        status: 'publish'
+        status: 'pending'
       },
       beforeSend: function(xhr) {
         xhr.setRequestHeader( 'X-WP-Nonce', api_vars.nonce );
      }
     }).done ( function (){
-      window.location.reload();
+      document.getElementById("submit-form").reset();
       alert('submitted');
     })
+    .fail(function(){
+      alert('something went wrong, post not submitted');
+      });
   });  
 })( jQuery );
 
