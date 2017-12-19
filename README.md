@@ -1,23 +1,46 @@
-# Quotes on Dev Starter
+# Quotes On Dev
+Quotes on Dev is an app that uses a GET request to a WP API to dynamically add a new quote to the front page without having the page refresh each time, it also uses a POST request to the WP API to submit a new quote into the site's database.
 
-A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+## Technologies Used
+* Gulp
+* Jquery
+* HTML
+* SASS
+* Wordpress 
+* PHP
+* Javascript
+* Databases
 
-## Installation
+## Functionality:
+* Be built using WordPress as CMS
+* Contain a About page, an Archives page, and Submit a Quote page
+* Contain a blog post index page and a single view for blog posts
+* Contain a search results page and 404 page
+* Fetch an initial random post on the front page
+* Fetch additional random posts on the front page using the WP API
+* Display one item per page for the blog index and author archives, five items per page for category and tag archives, and ten items per page for search results
+* Accept new quote submissions from the front-end of the site using WP API (for logged in users only), and set those submissions to pending by default
+* Show a message to unauthenticated users on the “Submit a Quote” page that informs them they must log in to submit a new quote
 
-### 1. Download me (don't clone me!)
+## Javscript Goals:
+* Make a GET request to a WP API endpoint using Ajax to dynamically add a new quote to the front page, and corresponding update the URL using the History API
+* Make a POST request to a WP API endpoint using Ajax to submit a new quote to the quote to the site
+* Clear the quote submission form and show an affirmative message when a quote is successfully submitted to the database
+* Show an error message when a quote is not successfully submitted to the database
 
-Then add me to your `wp-content/themes` directory.
+## Setup
 
-### 2. Rename the `quotesondev-starter-master` directory
+**Install dependencies:**
 
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
+`> npm i`
 
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` **inside your theme directory** to install the npm packages you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
-
-And now would be a good time to `git init` :)
+## Project Screenshots:
+<img src="https://i.imgur.com/luwiQya.png" width="250">
+<img src="https://i.imgur.com/C29inzi.png" width="250">
+<img src="https://i.imgur.com/V30fEkQ.png" width="250">
+<img src="https://i.imgur.com/aHwRewT.png" width="250">
+<img src="https://i.imgur.com/ZdcTM9i.png" width="250">
+<img src="https://i.imgur.com/RJlb13D.png" width="250">
+<img src="https://i.imgur.com/WPquKIC.png" width="250">
+                                                  
+                                                  
