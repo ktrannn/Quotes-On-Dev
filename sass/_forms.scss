@@ -75,17 +75,16 @@ textarea {
 	}
 }
 .search-submit{
-	background-color: none;
-	border: none;
-	border-radius: none;
+	background-color: transparent;
+	border: 0;
+	border-radius: 0;
 	color: #0c0;
-	padding: none;
 	padding: 0;
 	padding-left: 1rem;
 }
 
 .search-box{
-	border:none;
+	border:0;
 	padding:0;
 	margin:0;
 }

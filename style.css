@@ -411,16 +411,15 @@ textarea {
     margin-top: 1rem; }
 
 .search-submit {
-  background-color: none;
-  border: none;
-  border-radius: none;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
   color: #0c0;
-  padding: none;
   padding: 0;
   padding-left: 1rem; }
 
 .search-box {
-  border: none;
+  border: 0;
   padding: 0;
   margin: 0; }
 
@@ -750,7 +749,7 @@ body {
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
 .comment-content .wp-smiley {
-  border: none;
+  border: 0;
   margin-bottom: 0;
   margin-top: 0;
   padding: 0; }
@@ -784,19 +783,6 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-
-.error404 .search-box {
-  border: none;
-  padding: 0; }
-
-.error404 .search-submit {
-  background-color: none;
-  border: none;
-  border-radius: none;
-  color: #0c0;
-  padding: none;
-  padding: 0;
-  padding-left: 1rem; }
 
 .search-results .page-title {
   font-weight: 400;
